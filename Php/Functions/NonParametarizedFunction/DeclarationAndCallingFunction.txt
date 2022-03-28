@@ -1,0 +1,36 @@
+<?php
+
+
+//Non Parametarized Function:
+function Detail() //Function Declaration
+{
+    $name = "Usman";
+    $age = 22;
+    $gender = "Male";
+    echo "Name is: $name<br>";
+    echo "Age is: $age<br>";
+    echo "Gender is: $gender<br>";
+}
+
+Detail(); //Calling Function
+
+
+
+
+/*
+
+Note: You can call variable either with concatination or without doing concatination.
+
+Method(1) Calling Variable With Concatination:
+echo "Name is: ".$name;
+
+Method(2) Calling Variable Without Concatination:
+echo "Name is: $name";
+
+Both Methods Are Correct.
+
+*/
+
+
+
+?>

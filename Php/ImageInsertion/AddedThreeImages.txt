@@ -1,0 +1,14 @@
+<!-- Adding Image -->
+
+<?php
+
+echo "<img src='image1.jpg'>";
+echo "<br>";
+
+echo "<img src='image2.jpg'>";
+echo "<br>";
+
+echo "<img src='image3.jpg'>";
+echo "<br>";
+
+?>

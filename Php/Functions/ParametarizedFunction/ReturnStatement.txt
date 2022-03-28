@@ -1,0 +1,44 @@
+<?php
+
+//Parametarized Function With Return Statement:
+function GetHeight($height)
+{
+    return $height;
+}
+
+//Printing through echo keyword.
+echo GetHeight(6.1);
+
+echo "<br>";
+
+
+
+//Printing through storing return value in a variable.
+$MyHeight = GetHeight(6.2);
+echo $MyHeight;
+
+echo "<br>";
+
+
+
+//Printing with concatination.
+echo "My Height is: ".GetHeight(6.1);
+
+echo "<br>";
+
+echo "My Height is: ".$MyHeight;
+
+
+
+/*
+
+Note: If you are using return statement in your function and want to print it
+then you can use two techniques.
+
+Technique(1) Simply print return value by using echo keyword.
+Technique(2) Store retrun value in a variable and later print it through echo keyword.
+
+*/
+
+
+?>

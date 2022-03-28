@@ -1,0 +1,32 @@
+<?php
+
+//Addition
+function Add($value1,$value2)
+{
+    $result = $value1 + $value2;
+    echo "Sum of two values are: ".$result."<br>";      //Calling $result variable with concatination.
+}
+
+//Note: You can call function multiple times
+Add(10,20);
+Add(19,17);
+Add(17,21);
+
+
+echo "<br><br>";
+
+
+//For Multiplication
+function Product($value1,$value2)
+{
+    $result = $value1 * $value2;
+    echo "Product result of two values are: $result<br>"; //Calling $result variable without concatination.
+}
+
+Product(2,4);
+Product(4,8);
+Product(3,7);
+Product(7,9);
+
+
+?>

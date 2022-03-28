@@ -1,0 +1,24 @@
+
+
+
+<?php
+
+include('dbConnection.php');
+
+$DeleteID = $_GET['id']??"";
+$query = "delete from STUDENT where ID = '$DeleteID'";
+$exec = mysqli_query($con,$query);
+if($exec==true)
+{
+   echo "<script>alert('Data deleted');
+   window.location.href='Retrieval.php';
+   </script>";
+}
+else
+{
+    echo "<script>alert('Data not deleted');
+    window.location.href='Retrieval.php';
+    </script>";
+}
+
+?>

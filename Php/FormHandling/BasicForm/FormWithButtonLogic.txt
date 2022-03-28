@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Form -->
+<form action="MyForm.php" method="post">
+
+<!-- For Name -->
+<label>Name</label>
+<input type="text" name="name" placeholder="Enter Name">
+<br>
+
+<!-- For Age -->
+<label>Age</label>
+<input type="number" name="age" placeholder="Enter Age">
+<br>
+
+<!-- For Gender -->
+<label>Gender:</label>
+
+<!-- For Male -->
+<label>Male</label>
+<input type="radio" name="gender" value="Male">
+
+<!-- For Female -->
+<label>Female</label>
+<input type="radio" name="gender" value="Female">
+<br>
+
+<!-- For Email -->
+<label>Email</label>
+<input type="email" name="email" placeholder="Enter Email">
+<br>
+
+<!-- For Submit Button -->
+<input type="submit" value="Submit" name="btnSubmit">
+
+</form>
+
+<!-- Note: Radio button works only if you give value in 'value attribute' existing in Radio button field
+just like this <input type="radio" value="AnyValue">  -->
+
+<!-- Note: If you want to display information of form in a same page then write Web page name in 'action attribute'
+existing in form tag just like this <form action="WebPageName.php" method="post"> </form> -->
+
+
+<?php
+
+//Condition For Submit Button.
+if(isset($_POST['btnSubmit']))
+{
+    /*Now, We will take HTML field values in php variables for posting.*/
+
+    //Recieving values in Php Varaible:
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $gender = $_POST['gender'];
+    $email = $_POST['email'];
+
+    //Posting:
+    echo "Your name is: ".$name;
+    echo "<br>";
+    echo "Your age is: ".$age;
+    echo "<br>";
+    echo "Your gender is: ".$gender;
+    echo "<br>";
+    echo "Your email is: ".$email;
+}
+/* Note: We have used isset() method for Submit button to perform posting function.
+isset method is very useful for button events and works as similar as 'OnClick' event in JavaScript */
+
+?>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form action="Addition.php" method="post">
+
+<!-- For 1st Value -->
+<input type="text" name="value1" placeholder="Enter value 1">
+<br>
+
+<!-- For 2nd Value -->
+<input type="text" name="value2" placeholder="Enter value 2">
+<br>
+
+<!-- For Button -->
+<input type="submit" value="Add" name="btnAdd">
+
+</form>
+
+<?php
+
+// Condition for Add Button to perform addition
+if(isset($_POST['btnAdd']))
+{
+    // Condition for Validation to restrict both fields from being an empty
+    if($_POST['value1']!=null && $_POST['value2']!=null)
+    {
+      // Recieving HTML field values in Php Variables
+      $value1 = $_POST['value1'];   
+      $value2 = $_POST['value2'];   
+
+     // For adding both values   
+      $result = $value1 + $value2;
+      echo "Addition result: ".$result;
+    }
+    else
+    {
+        echo "Please fill both fields";
+    }
+}
+
+?>
+
+</body>
+</html>

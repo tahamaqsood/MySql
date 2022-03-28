@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- Short cuts 
+
+Write Form and press double tab           (For Form)
+Write Label and press double tab          (For Label)
+Write input:text and press double tab     (For Text field)
+Write input:number and press double tab   (For Number field)
+Write input:password and press double tab (For Password field)
+Write input:submit and press double tab   (For Button)
+Write input:radio and press double tab    (For Radio Button)
+Write input:search and press double tab   (For Search bar)
+
+-->
+
+
+
+<form action="Insert.php" method="post">
+<!-- For Name -->
+<label>Name</label>
+<input type="text" name="name">
+<br>
+<br>
+
+<!-- For Age -->
+<label>Age</label>
+<input type="text" name="age">
+<br>
+<br>
+
+<!-- For Gender -->
+<label>Gender:</label>
+<!-- Radio Button For Male -->
+<label>Male</label>
+<input type="radio" name="gender" value="Male">
+
+<!-- Radio Button For Female -->
+<label>Female</label>
+<input type="radio" name="gender" value="Female">
+<br>
+<br>
+
+<!-- For Fees -->
+<label>Fees</label>
+<input type="text" name="fees">
+<br>
+<br>
+
+<!-- For Button -->
+<input type="submit" value="Insert" name="btnSubmit">
+</form>
+
+<!-- Note: Radio button can send values in database only if you give value in 'value attribute' existing in Radio button field
+just like this <input type="radio" value="AnyValue">  -->
+</body>
+</html>

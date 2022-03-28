@@ -1,0 +1,64 @@
+<?php
+
+//Basic String Functions
+//For Lower
+$name = "USMAN";
+$lower = strtolower($name);
+echo $lower;
+echo "<br>";
+
+
+//For Upper
+$lastName = "hameed";
+echo strtoupper($lastName);
+echo "<br>";
+
+
+//For Reversing String value
+$teacherName = "Hamza";
+echo strrev($teacherName);
+echo "<br>";
+
+
+//For Repitition
+$alphabet = "A";
+echo str_repeat($alphabet,10);
+echo "<br>";
+
+//Note: str_repeat("string value",integer value);
+//String value is a value you want to repeat.
+//Integer value is a number of times you want to display your string value.
+
+
+//For Comparing String Values
+$value1 = "Usman";
+$value2 = "Usman";
+echo strcmp($value1,$value2);
+echo "<br>";
+
+/*
+Important Note:
+=> strcmp(); method will return 0 if string1 is equal to string2.
+=> It returns less than zero (-1) if the string1 is less than string2.
+=> Otherwise it returns greater than zero when the string1 is greater than string2.
+=> You can implement this method in login form like this:
+    if(strcmp($value1,$value2)==0)
+    {
+      echo "login successful";
+    }
+    else
+    {
+      echo "login failed..!";
+    }
+*/
+
+if(strcmp($value1,$value2)==0)
+    {
+      echo "login successful";
+    }
+    else
+    {
+      echo "login failed..!";
+    }
+
+?>

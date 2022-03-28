@@ -1,0 +1,113 @@
+==============
+FORM HANDLING:
+==============
+
+=> It is a Web page containing fields.
+
+
+=> It is used by users to enter information.
+
+
+=> It passes entered data from client to a server.
+
+
+~Steps for handling HTML forms and process information are as follows:
+
+* User enters information in an HTML form and sends it to the web server.
+
+* Web server passes the information to the php script engine for:
+
+(1) Processing the information
+(2) Sending output back to the web browser
+
+
+=> Form data is passed to the web server using the following methods:
+(1) GET
+(2) POST
+
+
+===========
+WEB SERVER:
+===========
+
+=> Accepts the information
+
+=> Processes the application data
+
+=> Stores it to the database 
+
+
+==============
+HTML FORM TAG:
+==============
+
+=> Used to create HTML form
+
+
+=> Included within the <form> </form> tag
+
+
+=> Attributes of an HTML form tag are:
+
+(1) Action: Defines URL where the form data is sent after it has been submitted.
+(2) Method: Define protocols that are used to submit the form data set.
+
+~ Method protocols are of two types:
+(1) GET
+(2) POST
+
+
+=================
+USING GET METHOD:
+=================
+
+=> Directs the web browser to send the encoded user information to the processing agent.
+
+
+=> Appends the encoded information at the end of the URL by a question mark(?) which
+separates URL and form information.
+
+
+=> The form data sent in the URL is a stream of name/value pair separated by ampersand(&).
+
+
+=> The query string is appended with the following URL:
+* http://www.information.com/text.php?Name=Usman&Age=24
+
+
+==========================
+RESTRICTION IN GET METHOD:
+==========================
+
+=> Form data set vales are restricted to American Standard Code For Information
+(ASCII) characters.
+
+
+=> Amount of information transferred is limited.
+
+
+=> Length of the query string is restricted to 255 characters.
+
+
+
+==================
+USING POST METHOD:
+==================
+
+=> Directs the web browser to send all the user information to the processing agent.
+
+
+=> Restricts sensitive information showing in URL like password, ID , Email etc.
+
+
+=> Has capacity to transmit more information as:
+
+* No physical limit on the amount of information passed in the HTTP request message body.
+* Uses variables to pass form information.
+
+
+=> The drawback of POST method is as follows:
+
+* Information sent is not encrypted so hackers can easily access it. 
+
+

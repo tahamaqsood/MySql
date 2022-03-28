@@ -1,0 +1,21 @@
+<?php
+
+//Receiving field values in php variables from field variables to post values. 
+$Name = $_POST['txt1'];
+$Email = $_POST['txt2'];
+$Number = $_POST['txt3'];
+
+
+//Posting//
+echo "Student name is: ".$Name;      //For Student Name
+echo "<br>";
+
+
+echo "Student email is: ".$Email;    //For Student Email
+echo "<br>";
+
+
+echo "Student number is: ".$Number;  //For Student Number
+echo "<br>";
+
+?>
