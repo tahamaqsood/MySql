@@ -1,0 +1,18 @@
+<!-- Multi-Dimensional Array -->
+
+<?php
+$Details = array(
+    array(101,"Ali","ali@gmail.com","Male"),
+    array(102,"Hira","hira@gmail.com","Female"),
+    array(103,"Usman","usmangmail.com","Male"),
+    array(104,"Bilal","bilal@gmail.com","Male"),
+    array(105,"Rida","rida@gmail.com","Female")
+);
+
+echo $Details[0][0]; /* For printing ID no: 101 */
+
+echo str_repeat('&nbsp;', 10); /* For giving 10 spaces!! (str represents string value) */
+
+echo $Details[4][2]; /* For printing an email of 5th row */
+
+?>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- Short cuts 
+
+Write Form and press double tab           (For Form)
+Write Label and press double tab          (For Label)
+Write input:text and press double tab     (For Text field)
+Write input:number and press double tab   (For Number field)
+Write input:password and press double tab (For Password field)
+Write input:submit and press double tab   (For Button)
+Write input:radio and press double tab    (For Radio Button)
+Write input:search and press double tab   (For Search bar)
+
+-->
+
+
+
+<form action="Insert.php" method="post">
+
+<label>Name</label>
+<input type="text" name="name">
+<br>
+<br>
+<label>Age</label>
+<input type="text" name="age">
+<br>
+<br>
+<label>Gender</label>
+<input type="text" name="gender">
+<br>
+<br>
+<label>Fees</label>
+<input type="text" name="fees">
+<br>
+<br>
+<input type="submit" value="Insert" name="btnSubmit">
+</form>
+
+
+</body>
+</html>

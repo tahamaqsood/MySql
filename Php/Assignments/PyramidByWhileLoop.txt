@@ -1,0 +1,15 @@
+<?php 
+$Rows=1;
+while($Rows<=10)
+{
+    $Column=1;
+    while($Column<=$Rows) /* Now it will print Row & Columns simualtaneously */
+    {
+      echo"^  ";
+      $Column++;      
+    }
+    echo"<br>"; /* For breaking line to occupy next row space  */
+    $Rows++;
+}
+
+?>

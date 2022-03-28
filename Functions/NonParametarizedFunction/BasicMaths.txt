@@ -1,0 +1,27 @@
+<?php
+
+function Add()    //Function Declaration 
+{
+    $value1 = 10;
+    $value2 = 20;
+    $result = $value1 + $value2;
+    echo "Sum of two numbers are: ".$result."<br>";              //Calling variable with concatination
+}
+
+Add();   //Calling Function
+
+
+echo "<br><vr>";
+
+
+function Sub()    //Function Declaration 
+{
+    $value1 = 90;
+    $value2 = 70;
+    $result = $value1 - $value2;
+    echo "Result after subtracting two values is: $result<br>";   //Calling variable without doing concatination
+}
+
+Sub();   //Calling Function
+
+?>

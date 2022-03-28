@@ -1,0 +1,42 @@
+<?php
+
+//Parametarized Function:
+function Greetings($name) //Function Declaration
+{
+    echo "A very warm Welcome to you $name";
+}
+
+Greetings("Usman"); //Calling Function
+
+/*
+
+Note:- Difference between Parameters And Arguments:
+
+===========   
+Parameters:
+===========
+When you declare parametarized function, the variables within paranthesis are called parameters.
+
+==========
+Arguments:
+==========
+When you call parametarized function by giving actual values to variables within paranthesis
+are called Arguments.
+
+
+For Example: 
+*Function Declaration*
+function Greetings($name) *$name variable is Parameter*
+{
+    echo "A very warm Welcome to you $name";
+}
+
+*Calling Function*
+Greetings("Usman"); * "Usman" is Argument which is assigned to $name variable *
+
+*/ 
+
+
+
+
+?>

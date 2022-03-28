@@ -1,0 +1,7 @@
+<?php
+
+include('DbConnection.php');
+
+echo "This is Contact Page";
+
+?>

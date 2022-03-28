@@ -1,0 +1,18 @@
+<!-- Single Level Array -->
+
+<?php
+
+$Fruits = array("Apple","Mango","Grapes","Banana","Strawberry","Orange","Watermelon");
+
+//For specifying length//
+$Length = count($Fruits);
+
+for($i=0; $i<$Length; $i++)
+{
+    //For printing Fruit names in un-order list//
+    echo "<ul>";
+    echo "<li>".$Fruits[$i]."</li>";
+    echo "</ul>";
+}
+
+?>

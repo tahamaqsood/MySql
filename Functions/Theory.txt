@@ -1,0 +1,64 @@
+
+=================
+FUNCTIONS IN PHP:
+=================
+
+=> A function is a block of statement that can be used repeatedly in a program.
+
+
+=> A function will not execute immediately when a page loads.
+
+
+=> A function will be executed by a call to the function.
+
+
+=> Functions in php are not case-sensitive. You can change casing capital to small or small to capital.
+
+
+=> Functions are named section of a program.
+
+
+=> Function split program into modules.
+
+
+=> In functions, statements are grouped into a single unit to perform a specific task.
+
+
+=> Enhance the logical flow in a program by dividing complicated code of sequences into
+smaller modules.
+
+
+=> Can be executed or invoked anywhere in the program using the assigned name. 
+
+
+=> There are two types of functions:
+(1) Built-in or pre-defined functions
+(2) Custom or user-defined functions
+
+
+=> The real power of php comes from its functions. It has more than 1000 built-in functions.
+
+
+=> Functions definition contains the code to be executed.
+
+
+~Tip: Give function a name that reflects what the function does!
+
+
+=======================
+PHP BUILT-IN FUNCTIONS:
+=======================
+
+=> Php provides different built-in functions to be included in the php script.
+
+
+=> Built-in functions are grouped into following categories:
+
+* Mathematical Functions
+* String Functions
+* Date & Time Functions
+* Error Handling Functions
+* Database Functions
+* Array Functions
+* Mail Functions
+

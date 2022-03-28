@@ -1,0 +1,38 @@
+<!-- Single Level Array -->
+
+<?php
+
+$Names = array("Usman","Ali","Bilal","Zahid","Ashir","Fahad");
+
+//Printing names by indexes//
+echo $Names[0];
+echo "<br>"; //For line break
+
+echo $Names[1];
+echo"<br>";  //For line break
+
+
+//Printing names along with meaningful description//
+echo "3rd Student Name is: ".$Names[2];
+echo "<br>"; 
+
+echo "4th Student Name is: ".$Names[3];
+echo "<br>";
+
+
+//Printing two separate statements in a sinlge line with the help of Concatination//
+echo "5th Student Name is: ".$Names[4]."<br>"."6th Student Name is: ".$Names[5];
+
+
+//For giving three lines spaces!!  (str repesent string values)//
+echo str_repeat("<br>", 3);
+
+
+//Printing all names by using For loop//
+for($i=0; $i<=5; $i++)
+{
+  echo $Names[$i];
+  echo "<br>";
+}
+
+?>

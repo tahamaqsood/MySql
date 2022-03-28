@@ -1,0 +1,55 @@
+<?php
+
+include('dbConnection.php');
+if(isset($_POST['btnSubmit'])) 
+{
+    $name=$_POST['name'];
+    $age=$_POST['age'];
+    $gender=$_POST['gender'];
+    $fees=$_POST['fees'];
+
+
+    $query = "insert into STUDENT values('NULL','$name','$age','$gender','$fees')";
+    //Alternate query to insert data in MySql
+    //$query = "insert into STUDENT (Name,Age,Gender,Fees) values ('$name','$age','$gender','$fees')";
+
+
+    /*
+
+    Important Note:
+
+    Now, we need " mysqli_query(); " method to run above query in our database.
+    mysqli_query(); method contains 2 parameters:
+
+    1st Parameter is *Database Connection* which is stored in $con variable.
+    2nd Parameter is *MySql Query* which is stored in $query variable.
+
+    Inshort: You are trying to add data in that particular database by running MySql Query.
+
+    */
+
+
+    $run = mysqli_query($con,$query);
+
+
+    if ($run==true)
+    {
+        echo"<script>alert('Data inserted');
+        window.location.href='Home.php';
+        </script>";
+    } 
+    else 
+    {
+        echo "<script>alert('Data not inserted');
+        window.location.href='Home.php';
+        </script>";
+    }
+    /*
+    Important Point:
+    We used window.location.href=""; to redirect to main page after the data 
+    inserted or not inserted.  
+    */
+
+}
+
+?>

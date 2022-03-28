@@ -1,0 +1,19 @@
+<?php
+
+//Giving Default Value
+function ShowName($name = "Anonymous")
+{
+   echo "Name is: $name<br>";
+}
+
+/*
+
+Note: If you want to display default value which you assigned to parameter within 
+paranthesis then call function without giving Argument (Actual value) to parameter variable.
+
+*/
+
+ShowName(); //For displaying default value
+ShowName("Usman"); //For showing User Defined value
+
+?>

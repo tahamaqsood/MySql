@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+<?php
+
+include('dbConnection.php');
+
+$UpdateID = $_GET['id']??"";
+
+$query= "select * from STUDENT where ID = '$UpdateID'";
+$result = mysqli_query($con,$query);
+$data = mysqli_fetch_assoc($result);
+
+?>
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-4 col-md-offset-2">
+
+
+ <form action="Update.php" method="post" style="margin-top:30px;">
+
+         <input type="hidden" name="id" value="<?php echo $data['ID']; ?>">
+       
+          <label>NAME</label>
+         <input type="text" name="name" placeholder="Enter Name" class="form-control" value=" <?php echo $data['NAME'];?> ">
+         <br>
+
+         <label>AGE</label>
+         <input type="text" name="age" placeholder="Enter Age" class="form-control" value=" <?php echo $data['AGE'];?> ">
+         <br>
+
+         <label>GENDER:</label> &nbsp; 
+         
+         <input type="text" name="gender" placeholder="Enter Gender" class="form-control" value=" <?php echo $data['GENDER'];?> ">
+         <br>
+
+         <label>FEES</label>
+         <input type="text" name="fees" placeholder="Enter Fees" class="form-control" value=" <?php echo $data['FEES'];?> ">
+         <br>
+
+         <input type="submit" value="Update" name="btnUpdate" class="btn btn-primary btn-block">
+
+ </form>
+</div>
+</div>
+</div>
+
+<?php
+
+if(isset($_POST['btnUpdate']))
+{
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $gender = $_POST['gender'];
+    $fees = $_POST['fees'];
+
+    $query = "update STUDENT set NAME='$name',AGE='$age',GENDER='$gender',FEES='$fees' where ID = $id";
+    $exec = mysqli_query($con,$query);
+    if($exec==true)
+    {
+        echo "<script>alert('Data updated');
+        window.location.href='Retrieval.php';
+        </script>";
+    }
+    else
+    {
+        echo "<script>alert('Data not updated')</script>";
+    }
+
+}
+
+?>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

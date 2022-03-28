@@ -1,0 +1,18 @@
+
+=====================
+Assignment Mechanism:
+=====================
+
+=> First of all install bootstrap in your project.
+
+
+=> Go to view --> click on extensions --> search bootstrap --> click on install. Or simply use Shortcut of extensions = "ctrl+shift+x".
+
+
+=> Now, go to your file or project press b4- and ctrl+space to see intellisense list option.
+
+
+=> You will see bootstrap template option --> double click on it.
+
+
+=> Now, start coding of php <body> within body tag </body>.  

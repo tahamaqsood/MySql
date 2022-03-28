@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+
+
+<?php
+
+$Details = array(
+    array(101,"Ali","ali@gmail.com","Male"),
+    array(102,"Hira","hira@gmail.com","Female"),
+    array(103,"Usman","usmangmail.com","Male"),
+    array(104,"Bilal","bilal@gmail.com","Male"),
+    array(105,"Rida","rida@gmail.com","Female"),
+    array(106,"Shahzaib","Shahzaib@gmail.com","Male"),
+    array(107,"Maham","maham@gmail.com","Female"),
+    array(108,"Umer","umer@gmail.com","Male"),
+    array(109,"Danish","danish@gmail.com","Male"),
+    array(110,"Fiza","fiza@gmail.com","Female"),
+    array(111,"Zain","zain@gmail.com","Male")
+);
+
+//<!-- Table -->
+echo "<table class='table table-stripped table-hover'>";
+
+echo "<tr>"; //1st Row Started
+echo "<th> IDs </th>";    //1st Column
+
+echo "<th> Names </th>";  //2nd Column
+
+echo "<th> Emails </th>"; //3rd Column
+
+echo "<th> Gender </th>"; //4th Column
+
+echo "</tr>"; //1st Row Ended
+
+
+
+echo "<tr>"; //2nd Row Started
+
+echo "<td>".$Details[0][0]."</td>";  //1st Column
+
+echo "<td>".$Details[0][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[0][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[0][3]."</td>";  //4th Column
+
+echo "</tr>"; //2nd Row Ended
+
+
+
+echo "<tr>"; //3rd Row Started
+
+echo "<td>".$Details[1][0]."</td>";  //1st Column
+
+echo "<td>".$Details[1][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[1][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[1][3]."</td>";  //4th Column
+
+echo "</tr>"; //3rd Row Ended
+
+
+
+echo "<tr>"; //4th Row Started
+
+echo "<td>".$Details[2][0]."</td>";  //1st Column
+
+echo "<td>".$Details[2][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[2][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[2][3]."</td>";  //4th Column
+
+echo "</tr>"; //4th Row Ended
+
+
+
+echo "<tr>"; //5th Row Started
+
+echo "<td>".$Details[3][0]."</td>";  //1st Column
+
+echo "<td>".$Details[3][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[3][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[3][3]."</td>";  //4th Column
+
+echo "</tr>"; //5th Row Ended
+
+
+
+echo "<tr>"; //6th Row Started
+
+echo "<td>".$Details[4][0]."</td>";  //1st Column
+
+echo "<td>".$Details[4][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[4][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[4][3]."</td>";  //4th Column
+
+echo "</tr>"; //6th Row Ended
+
+
+
+echo "<tr>"; //7th Row Started
+
+echo "<td>".$Details[5][0]."</td>";  //1st Column
+
+echo "<td>".$Details[5][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[5][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[5][3]."</td>";  //4th Column
+
+echo "</tr>"; //7th Row Ended
+
+
+
+echo "<tr>"; //8th Row Started
+
+echo "<td>".$Details[6][0]."</td>";  //1st Column
+
+echo "<td>".$Details[6][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[6][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[6][3]."</td>";  //4th Column
+
+echo "</tr>"; //8th Row Ended
+
+
+
+echo "<tr>"; //9th Row Started
+
+echo "<td>".$Details[7][0]."</td>";  //1st Column
+
+echo "<td>".$Details[7][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[7][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[7][3]."</td>";  //4th Column
+
+echo "</tr>"; //9th Row Ended
+
+
+
+echo "<tr>"; //10th Row Started
+
+echo "<td>".$Details[8][0]."</td>";  //1st Column
+
+echo "<td>".$Details[8][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[8][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[8][3]."</td>";  //4th Column
+
+echo "</tr>"; //10th Row Ended
+
+
+
+echo "<tr>"; //11th Row Started
+
+echo "<td>".$Details[9][0]."</td>";  //1st Column
+
+echo "<td>".$Details[9][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[9][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[9][3]."</td>";  //4th Column
+
+echo "</tr>"; //10th Row Ended
+
+
+
+echo "<tr>"; //12th Row Started
+
+echo "<td>".$Details[10][0]."</td>";  //1st Column
+
+echo "<td>".$Details[10][1]."</td>";  //2nd Column
+
+echo "<td>".$Details[10][2]."</td>";  //3rd Column
+
+echo "<td>".$Details[10][3]."</td>";  //4th Column
+
+echo "</tr>"; //12th Row Ended
+
+echo "</table>";
+ 
+
+?>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
