@@ -1,0 +1,80 @@
+
+================
+SESSIONS IN PHP:
+================
+
+=> A session is a way to store information (in variables) to be used across multiple pages.
+
+
+=> Web browsers and Web servers have a stateless interaction and do not maintain track of
+user sessions.
+
+
+=> Enables Web browser to communitcate with Web servers.
+
+
+=> Web browser has no methods or functions to maintain the status of a particular user.
+
+
+=> Session stores in Web server.  
+
+
+=> Default expiration time of session is 24 minutes.
+
+
+=> A session is started with the session_start() function.
+
+
+=> A session can be destroyed by using session_destroyed() function.
+
+
+=> Session variables are set with the php global variable named $_SESSION
+
+
+~Note: The session_start(); function must be the very first thing in your document
+before any HTML tags. 
+
+
+=> To remove all global session variables and destroy the session,
+Use:
+* session_unset() --> remove all session variables.
+* session_destroy() --> destroy the session.
+
+
+=> Web sites that cannot depend on HTTP or WEb servers for complex user information
+need session tracking.
+
+
+===============
+Important Note:
+===============
+ 
+* Stateless Concept = Whenever we click on button, it performs post back which results re-creation
+ of our Web page.
+
+
+* Re-creation means ' Refreshes ' a Web page.
+
+
+* It destroys our web page once and Re-created after the post back function performs. 
+
+
+* Drawback of "post back" function is that all variables who stores any type of value will be empty(null)
+after the Web page refreshes.
+
+
+* If you want to store value in variable even after the Web page refreshes then you must need to use Sessions.
+
+
+* Our Websites runs on HTTP.
+
+
+* HTTP is Stateless.
+
+
+* $_GET and $_POST variables are Global Variables.
+
+
+* If you does not specify GET or POST method in Html form's action attribute then you need to use $_REQUEST method
+to access fields and button of Html form.
+

@@ -1,0 +1,53 @@
+
+==================
+SWITCH STATEMENTS:
+==================
+
+=> Used as an alternative to a lengthy if else construct.
+
+
+=> Consists of an expression that is compared to all possible case expressions listed within its body.
+
+
+=> On finding a match, it executes the block of code ignoring any further case lines.
+
+
+=> Uses a break statement to halt or terminate the execution of the switch statement and transfer the control to the code.
+
+
+Note(1): We can't use operators like less than '<', greater than '>' and more like '==' , '&&' , '||' etc in Switch case 
+for comparing any specific value. We can only compare variable's value with different cases.
+
+
+=======
+SYNTAX:
+=======
+
+  switch($variable)
+  {
+    case 1:
+    echo "If variable's value matches with case 1 then print this... ";
+    break;
+
+
+      case 2:
+      echo "If variable's value matches with case 2 then print this... ";
+      break;
+
+
+        case 3:
+        echo "If variable's value matches with case 3 then print this... ";
+        break;
+
+
+        default:
+        echo "If variable's value doesn't match with any case then print this... ";
+        break;
+  }
+
+
+Note(2): default block works as same as else block works in 'if else' construct.
+
+Note(3): Case name can either in an integer format, character or in a string format as well.
+
+

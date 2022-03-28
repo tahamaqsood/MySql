@@ -1,0 +1,47 @@
+<?php
+
+$value1 = 20;
+$value2 = 10;
+
+//For Addition
+$sum = $value1+$value2;
+echo "Sum is: ".$sum;
+echo "<br>"; 
+
+
+//For Subtraction
+$sub = $value1-$value2;
+echo "After Subtraction the value is: ".$sub;
+echo "<br>"; 
+
+
+
+//For Multiplication
+$pro = $value1*$value2;
+echo "product is: ".$pro;
+echo "<br>"; 
+
+
+//For Division
+$div = $value1/$value2;
+echo "Division value is: ".$div;
+echo "<br>"; 
+
+?>
+
+
+
+
+/*
+
+Note: You can call variable either with concatination or without doing concatination.
+
+Method(1) Calling Variable With Concatination:
+echo "Sum is: ".$sum;
+
+Method(2) Calling Variable Without Concatination:
+echo "Sum is: $sum";
+
+Both Methods Are Correct.
+
+*/
