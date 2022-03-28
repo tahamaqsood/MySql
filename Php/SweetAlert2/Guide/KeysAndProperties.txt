@@ -1,0 +1,33 @@
+
+==============================================	
+SWEET ALERT2 CONFIGURATION KEYS OR PROPERTIES:
+==============================================
+
+
+=> title: "Your title",
+
+=> text:  "Your text",
+
+=> icon: ("success", "info", "warning", "error", "question"),
+
+=> timer:3000,
+
+=> timerProgressBar:true,
+
+=> footer: "Your footer title",
+
+=> background: "gray",
+
+=> confirmButtonText: "Yes, Ok , Accept!",
+
+=> showCancelButton: true,
+
+=> cancelButtonText: "Cancel, No, Neglect, Refuse!",
+
+=> confirmButtonColor: "green",
+
+=> cancelButtonColor: "red",
+
+=> backdrop: "gray",
+
+=> showCloseButton: true

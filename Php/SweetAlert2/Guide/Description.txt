@@ -1,0 +1,99 @@
+
+==============
+SWEET ALERT 2:
+==============
+
+=> A beautiful, responsive, customizable, accessible replacement for javascript's popup boxes.
+
+
+======
+GUIDE:
+======
+
+=> First of all download and install sweet alert 2.
+
+
+=> Go to google -> search sweet alert 2 -> visit the official site of sweet alert2 -> click on installation -> click on jsdeliver CDN -> 
+click on download icon which is downward arrow at the top-right side.
+
+
+=> Now, copy zip folder and paste it in your project folder -> extract sweet alert2 files there. 
+
+
+=> Now, open sweet alert2 folder -> open packages folder and copy dist folder (Distributable folder) -> and paste it outside
+of the sweet alert2 folder because dist is our main folder which contains actual packages and plugin files.
+
+
+=> Now you can delete all folders except dist folder.
+
+
+=> Now, go to visual studio code. In html5 basic code, link your css file within head tag.
+
+<link rel="stylesheet" href="dist/sweetalert2.min.css">
+
+
+=> Link your js file before end tag of body.
+
+<script src="dist/sweetalert2.all.min.js"> </script>
+
+
+=====
+NOTE:
+=====
+
+~ Must add jquery CDN or download jquery file and link it like this <script src="jquery.js"> </script>.
+Otherwise sweetalert2 won't work. You can use jquery CDN.
+
+
+                   <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+=> Now, add button within body tag.
+
+  <input type="button" value="click me" id="btn">
+
+
+=> Now, use jquery
+
+  <script>
+
+    $(document).ready(function(){
+     $("#btn").click(function(){
+
+        <!-- Now call swal function for sweet alert2 popup box and use keys/properties within javascript object { } -->
+         swal.fire({
+              title: "Welcome.!!",
+              text: "Welcome to sweet alert2",
+              icon: "success",
+              showCloseButton: true
+           
+           });
+      
+
+        });
+
+     });
+
+      </script>
+
+
+=====
+NOTE:
+=====
+
+~ For further understanding, check demo project existed in DemoProject folder.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
