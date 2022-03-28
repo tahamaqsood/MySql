@@ -1,0 +1,31 @@
+
+=============================
+JQUERY DATA TABLE PLUGIN CDN:
+=============================
+
+
+    <!-- Data Table Style CDN -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+    <!-- Data Table CDN -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+
+
+
+===========================
+JQUERY DATA TABLE FUNCTION:
+===========================
+
+<script>
+
+   $(document.ready(function() {
+   $("#IdOfTable").dataTable();
+   });)
+
+</script>

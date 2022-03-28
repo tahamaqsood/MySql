@@ -1,0 +1,13 @@
+<?php
+
+$con = mysqli_connect('localhost','root','','MyNewDatabase');
+if($con==true)
+{
+    echo "<script>alert('Connection established ..!!')</script>";
+}
+else
+{
+    echo "<script>alert('Connection Failed ..!!')</script>";
+}
+
+?>
